@@ -8,8 +8,17 @@
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 </head>
 <body>
-  <p>Hello world!</p>
+  <p>Chat app</p>
+
+  <ol id="messages"></ol>
+
+  <form id="message-form">
+    <input name="message" type="text" placeholder="Type message here" />
+    <button>Submit</button>
+  </form>
+
   <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/libs/jquery.min.js"></script>
   <script src="/js/index.js"></script>
 </body>
 </html>
