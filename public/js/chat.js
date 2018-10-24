@@ -74,7 +74,6 @@ $('#message-form').on('submit', function(e) {
     return
   }
   socket.emit('createMessage', {
-    from: 'User',
     text: messageTextbox.val()
   }, function(res) {
     messageTextbox.val('');
